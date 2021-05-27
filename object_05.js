@@ -7,26 +7,16 @@
 // Напишите код для суммирования всех зарплат и сохраните результат в переменной sum. Должно получиться 390.
 // Если объект salaries пуст, то результат должен быть 0.
 
-
-
 let salaries = {
     John: 100,
     Ann: 160,
     Pete: 130
 }
 
-const sum = salaries.reduce((accumulator, currentValue, index, array) => { 
-    return accumulator + currentValue.salaries[Object.entries(array).filter(([key, value]) => value)];   
+const arr = Object.values(salaries);
+const sumSalaries = arr.reduce(function(accumulator, currentValue) {
+    return currentValue + accumulator;
 });
 
+console.log(sumSalaries);
 
-console.log(sum);
-
-
-const f = [0, 1, 2, 3, 4];
-
-const sum = f.reduce(function(previousValue, currentValue, index, array) {
-    return previousValue + currentValue;
-});
-
-console.log(sum);
