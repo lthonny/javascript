@@ -1,20 +1,17 @@
 // Напишите функцию isEmpty(obj), которая возвращает true, если у объекта нет свойств, иначе false.
 
-let schedule = {};
+let schedule = {
+    // key        value
+    // ["8:30"] = "get up";
+};
+
 schedule["8:30"] = "get up";
 
-// console.log(schedule);
-
-// console.log('key' in schedule);
-
-
 function isEmply(obj) {
-    for (key in obj) {
-        if ('key' in ) {
-            console.log('Ключ присутствует');
-        } else {
-            console.log('Данного ключа нет');
-        }
-}}
+    for (let key in obj) {
+        return false;
+    }
+    return true;
+}
 
-isEmply(schedule);
+console.log(isEmply(schedule));
