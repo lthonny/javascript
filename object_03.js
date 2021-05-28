@@ -35,7 +35,5 @@ function multiplyNumeric(obj) {
     }
 }
 
-multiplyNumeric(menu);
-
-console.log(menu);
+console.log(multiplyNumeric(menu));
 
