@@ -5,7 +5,6 @@
 // Измените значение свойства name на Pete.
 // Удалите свойство name из объекта.
 
-
 const user = {};
 user.name = 'Join';
 user.surname = 'Smith';

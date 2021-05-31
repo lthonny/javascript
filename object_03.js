@@ -16,24 +16,22 @@
 //   height: 600,
 //   title: "My menu"
 // };
-// Обратите внимание, что multiplyNumeric не нужно ничего возвращать. 
+// Обратите внимание, что multiplyNumeric не нужно ничего возвращать.
 // Следует напрямую изменять объект.
 // P.S. Используйте typeof для проверки, что значение свойства числовое.
 
 let menu = {
-    width: 200, 
-    height: 300,
-    title: "My menu"
+	width: 200,
+	height: 300,
+	title: 'My menu',
 };
 
-
 function multiplyNumeric(obj) {
-    for (let key in obj) {
-        if (typeof (menu[key]) === 'number') {
-            menu[key] *= 2;
-        }
-    }
+	for (let key in obj) {
+		if (typeof menu[key] === 'number') {
+			menu[key] *= 2;
+		}
+	}
 }
 
 console.log(multiplyNumeric(menu));
-
