@@ -30,4 +30,4 @@ true + false; // 1
 '  -9  ' - 5; // -14
 null + 1; // 1
 undefined + 1; // ?NAN
-' \t \n' - 2; // ??s
+' \t \n' - 2; // ??
