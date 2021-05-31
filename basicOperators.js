@@ -29,5 +29,5 @@ true + false; // 1
 '  -9  ' + 5; // -9 5
 '  -9  ' - 5; // -14
 null + 1; // 1
-undefined + 1; //
-' \t \n' - 2; //
+undefined + 1; // ?NAN
+' \t \n' - 2; // ??s
